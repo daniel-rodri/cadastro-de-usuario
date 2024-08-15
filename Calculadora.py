@@ -19,7 +19,7 @@ class Calculadora:
 c = Calculadora()
 
 print("adicionar: ", c.adicionar(10,5))
-print("subutrair: ", c.subtrair(10,5))
+print("subtrair: ", c.subtrair(10,5))
 print("multiplicar: ", c.multiplicar(10,5))
 print("dividir: ", c.dividir(10,5))
 print("restoDaDivisao: ", c.restoDaDivisao(10,5))
