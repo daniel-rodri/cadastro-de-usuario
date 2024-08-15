@@ -1,22 +1,25 @@
 class Calculadora:
-    def adicionar( a, b):
+    def adicionar(self, a, b):
         return a + b
 
-    def subtrair( a, b):
+    def subtrair(self, a, b):
         return a - b
 
-    def multiplicar(a, b):
+    def multiplicar(self, a, b):
         return a * b
 
-    def dividir(a, b):
+    def dividir(self, a, b):
         if b == 0:
             return "Erro: Divisão por zero não é permitida"
         return a / b
     
-c = Calculadora(10,5)
+    def restoDaDivisao(self, a, b):
+        return a % b
 
+c = Calculadora()
 
-print(c.adicionar)
-print(c.subtrair)
-print(c.multiplicar)
-print(c.dividir)
+print("adicionar: ", c.adicionar(10,5))
+print("subutrair: ", c.subtrair(10,5))
+print("multiplicar: ", c.multiplicar(10,5))
+print("dividir: ", c.dividir(10,5))
+print("restoDaDivisao: ", c.restoDaDivisao(10,5))
